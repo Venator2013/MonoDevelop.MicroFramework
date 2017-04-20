@@ -65,7 +65,7 @@ namespace MonoDevelop.MicroFramework
 
 		protected override TargetFrameworkMoniker OnGetDefaultTargetFrameworkId ()
 		{
-			return new TargetFrameworkMoniker (".NETMicroFramework", "4.3");
+			return new TargetFrameworkMoniker (".NETMicroFramework", "4.2");
 		}
 
 		protected override TargetFrameworkMoniker OnGetDefaultTargetFrameworkForFormat (string toolsVersion)

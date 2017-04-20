@@ -169,7 +169,7 @@ namespace MonoDevelop.MicroFramework
 			var references = assembly.GetReferencedAssemblies();
 			foreach(var reference in references)
 			{
-				var path = "/Library/Frameworks/Microsoft .NET Micro Framework/v4.3/Assemblies/le/" + reference.Name + ".dll";
+				var path = "/Library/Frameworks/Microsoft .NET Micro Framework/v4.2/Assemblies/le/" + reference.Name + ".dll";
 				if(!File.Exists(path))
 					continue;
 				refs.Add(path);
@@ -230,8 +230,8 @@ namespace MonoDevelop.MicroFramework
 
 					refs = refs.Distinct(new CompareAssemblyName()).ToList();
 
-					string[] pes = GetDependencies(refs.ToArray(), true, true, engine.IsTargetBigEndian, "v4.3");
-					string[] dlls = GetDependencies(refs.ToArray(), true, false, engine.IsTargetBigEndian, "v4.3");
+					string[] pes = GetDependencies(refs.ToArray(), true, true, engine.IsTargetBigEndian, "v4.2");
+					string[] dlls = GetDependencies(refs.ToArray(), true, false, engine.IsTargetBigEndian, "v4.2");
 
 					Debug.Assert(pes.Length == dlls.Length);
 

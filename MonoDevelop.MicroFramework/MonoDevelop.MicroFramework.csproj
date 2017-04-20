@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\MonoDevelop.Addins.0.3.8\build\net40\MonoDevelop.Addins.props" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.8\build\net40\MonoDevelop.Addins.props')" />
+  <Import Project="..\packages\MonoDevelop.Addins.0.3.10\build\net40\MonoDevelop.Addins.props" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.10\build\net40\MonoDevelop.Addins.props')" />
 	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
 	<PropertyGroup>
 		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -152,6 +152,80 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 		<None Include="packages.config" />
+		<None Include="files\xbuild\Microsoft\.NET Micro Framework\v4.2\CSharp.targets" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsClient.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsClient.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsDevice.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsDevice.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsExtensions.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsExtensions.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFUpdate.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFUpdate.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFWsStack.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFWsStack.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Graphics.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Graphics.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.OneWire.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.OneWire.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.PWM.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.PWM.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.SerialPort.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.SerialPort.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.Usb.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.Usb.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Hardware.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.IO.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.IO.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Ink.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Ink.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Native.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Native.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Net.Security.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Net.Security.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Net.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Net.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Security.PKCS11.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Security.PKCS11.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Time.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Time.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.TinyCore.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.TinyCore.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Touch.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Touch.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Update.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Update.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Wireless.IEEE_802_15_4.Mac.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Wireless.IEEE_802_15_4.Mac.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Wireless.IEEE_802_15_4.Phy.CC2420.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Wireless.IEEE_802_15_4.Phy.CC2420.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Wireless.IEEE_802_15_4.Phy.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Wireless.IEEE_802_15_4.Phy.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Wireless.IEEE_802_15_4.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.SPOT.Wireless.IEEE_802_15_4.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.VisualBasic.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\Microsoft.VisualBasic.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Ftp.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Ftp.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Http.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Http.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.IO.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.IO.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Net.Security.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Net.Security.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Security.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Security.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Text.RegularExpressions.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Text.RegularExpressions.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Xml.Legacy.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Xml.Legacy.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Xml.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.Xml.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\System.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\mscorlib.dll" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\mscorlib.pdb" />
+		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\RedistList\FrameworkList.xml" />
 	</ItemGroup>
 	<PropertyGroup Condition="$(OS)!='Unix'">
 		<MacPlatform />
@@ -163,5 +237,5 @@
 		<AddinReference Include="MonoDevelop.Debugger" />
 		<AddinReference Include="$(MacPlatform)" />
 	</ItemGroup>
-	<Import Project="..\packages\MonoDevelop.Addins.0.3.8\build\net40\MonoDevelop.Addins.targets" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.8\build\net40\MonoDevelop.Addins.targets')" />
+	<Import Project="..\packages\MonoDevelop.Addins.0.3.10\build\net40\MonoDevelop.Addins.targets" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.10\build\net40\MonoDevelop.Addins.targets')" />
 </Project>

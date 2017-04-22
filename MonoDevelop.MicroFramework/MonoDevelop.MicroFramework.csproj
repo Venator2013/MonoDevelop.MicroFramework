@@ -137,6 +137,7 @@
 	<ItemGroup>
 		<Folder Include="Debug\" />
 		<Folder Include="icons\" />
+		<Folder Include="files\xbuild\Microsoft\.NET Micro Framework\v4.2\" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Debugger\Debugger.csproj">
@@ -152,7 +153,6 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 		<None Include="packages.config" />
-		<None Include="files\xbuild\Microsoft\.NET Micro Framework\v4.2\CSharp.targets" />
 		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsClient.dll" />
 		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsClient.pdb" />
 		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsDevice.dll" />

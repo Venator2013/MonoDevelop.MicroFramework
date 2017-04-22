@@ -5,18 +5,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.IO;
 using System.Threading;
 using System.Runtime.InteropServices;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Management;
 using Microsoft.Win32;
 using Microsoft.Win32.SafeHandles;
-using System.Net;
-using System.Net.Sockets;
-using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Microsoft.SPOT.Debugger

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\MonoDevelop.Addins.0.3.10\build\net40\MonoDevelop.Addins.props" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.10\build\net40\MonoDevelop.Addins.props')" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.props')" />
 	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
 	<PropertyGroup>
 		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -25,7 +26,7 @@
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<DebugType>pdbonly</DebugType>
+		<DebugType></DebugType>
 		<Optimize>true</Optimize>
 		<OutputPath>bin\Release</OutputPath>
 		<DefineConstants>TRACE</DefineConstants>
@@ -42,21 +43,39 @@
 		<Reference Include="System.Data" />
 		<Reference Include="System.Xml" />
 		<Reference Include="Mono.Cecil">
-			<HintPath>..\ext\Mono.Cecil.dll</HintPath>
-			<Private>False</Private>
+		  <HintPath>..\packages\Mono.Cecil.0.9.6.4\lib\net45\Mono.Cecil.dll</HintPath>
+		  <Private>False</Private>
 		</Reference>
 		<Reference Include="Mono.Cecil.Mdb">
-			<HintPath>..\ext\Mono.Cecil.Mdb.dll</HintPath>
-			<Private>False</Private>
+		  <HintPath>..\packages\Mono.Cecil.0.9.6.4\lib\net45\Mono.Cecil.Mdb.dll</HintPath>
+		  <Private>False</Private>
 		</Reference>
 		<Reference Include="Mono.Cecil.Pdb">
-			<HintPath>..\ext\Mono.Cecil.Pdb.dll</HintPath>
-			<Private>False</Private>
+		  <HintPath>..\packages\Mono.Cecil.0.9.6.4\lib\net45\Mono.Cecil.Pdb.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="Mono.Cecil.Rocks">
+		  <HintPath>..\packages\Mono.Cecil.0.9.6.4\lib\net45\Mono.Cecil.Rocks.dll</HintPath>
+		</Reference>
+		<Reference Include="ICSharpCode.NRefactory.Cecil">
+		  <HintPath>..\packages\ICSharpCode.NRefactory.5.5.1\lib\Net40\ICSharpCode.NRefactory.Cecil.dll</HintPath>
+		</Reference>
+		<Reference Include="ICSharpCode.NRefactory.CSharp">
+		  <HintPath>..\packages\ICSharpCode.NRefactory.5.5.1\lib\Net40\ICSharpCode.NRefactory.CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="ICSharpCode.NRefactory">
+		  <HintPath>..\packages\ICSharpCode.NRefactory.5.5.1\lib\Net40\ICSharpCode.NRefactory.dll</HintPath>
+		</Reference>
+		<Reference Include="ICSharpCode.NRefactory.Xml">
+		  <HintPath>..\packages\ICSharpCode.NRefactory.5.5.1\lib\Net40\ICSharpCode.NRefactory.Xml.dll</HintPath>
 		</Reference>
 		<Reference Include="Mono.Debugging">
-			<HintPath>..\ext\Mono.Debugging.dll</HintPath>
-			<Private>False</Private>
+		  <HintPath>..\packages\Mono.Debugging.1.0.20170212.42\lib\net40\Mono.Debugging.dll</HintPath>
+		  <Private>False</Private>
 		</Reference>
+		<Reference Include="Microsoft.Build.Framework" />
+		<Reference Include="Microsoft.Build.Tasks.v4.0" />
+		<Reference Include="Microsoft.Build.Utilities.v4.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="MicroFrameworkDebugger.cs" />
@@ -152,7 +171,6 @@
 		<None Include="libusb-1.0.dylib">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
-		<None Include="packages.config" />
 		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsClient.dll" />
 		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsClient.pdb" />
 		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\MFDpwsDevice.dll" />
@@ -226,6 +244,7 @@
 		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\mscorlib.dll" />
 		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\mscorlib.pdb" />
 		<None Include="files\xbuild-framework\.NETMicroFramework\v4.2\RedistList\FrameworkList.xml" />
+		<None Include="packages.config" />
 	</ItemGroup>
 	<PropertyGroup Condition="$(OS)!='Unix'">
 		<MacPlatform />
@@ -237,5 +256,6 @@
 		<AddinReference Include="MonoDevelop.Debugger" />
 		<AddinReference Include="$(MacPlatform)" />
 	</ItemGroup>
+	<Import Project="..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.targets')" />
 	<Import Project="..\packages\MonoDevelop.Addins.0.3.10\build\net40\MonoDevelop.Addins.targets" Condition="Exists('..\packages\MonoDevelop.Addins.0.3.10\build\net40\MonoDevelop.Addins.targets')" />
 </Project>

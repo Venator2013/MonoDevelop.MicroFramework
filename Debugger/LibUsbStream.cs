@@ -54,6 +54,7 @@ namespace Microsoft.SPOT.Debugger
 						var fullname = usbRegDevice.FullName.ToLower();
 						//MacBook keyboard became unresponsive after I accidentally started debugging on it...
 						//Lets try to hide most of devices
+						Console.WriteLine (fullname);
 						if(fullname.Contains("apple") ||
 						   fullname.Contains("key") ||
 						   fullname.Contains("mouse") ||
